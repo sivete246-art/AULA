@@ -1,0 +1,26 @@
+estado = "desligado"
+
+while True:
+    print("\nEstado atual:", desligado)
+    acao = input("Digite (ligar luz ou ar / desligar luz ou ar / sair): ")
+
+    if acao == "ligar":
+        if estado == "ligado":
+            estado = "desligado"
+            print("ligar luz. luz ou ar ja esta ligada.")
+        else:
+            print("A luz ou ar ja esta ligada.")
+
+    elif acao == "ligar":
+        if estado == "desligar":
+            estado = "desligada"
+            print("Você ligou. agua ou luz desligou.")
+        else:
+            print("luz ou ar esta desligada, ligue.")
+
+    elif acao == "sair":
+        print("Encerrando sistema...")
+        break
+
+    else:
+        print("Comando inválido!")
