@@ -1,0 +1,26 @@
+estado = "travada"
+
+while True:
+    print("\nEstado atual:", estado)
+    acao = input("Digite (moeda / empurre / sair): ")
+
+    if acao == "moeda":
+        if estado == "travada":
+            estado = "destravada"
+            print("Moeda inserida. Catraca destravada.")
+        else:
+            print("A catraca já está destravada.")
+
+    elif acao == "empurre":
+        if estado == "destravada":x
+            estado = "travada"
+            print("Você empurrou. Catraca voltou para travada.")
+        else:
+            print("Catraca travada! Insira uma moeda.")
+
+    elif acao == "sair":
+        print("Encerrando sistema...")
+        break
+
+    else:
+        print("Comando inválido!")
